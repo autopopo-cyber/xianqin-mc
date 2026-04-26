@@ -11,7 +11,8 @@ import { CronManagementPanel } from '@/components/panels/cron-management-panel'
 import { MemoryBrowserPanel } from '@/components/panels/memory-browser-panel'
 import { CostTrackerPanel } from '@/components/panels/cost-tracker-panel'
 import { TaskBoardPanel } from '@/components/panels/task-board-panel'
-import { TaskTreePanel } from '@/components/panels/task-tree-panel'
+// TaskTreePanel ready — switch when useEffect issue resolved in Next.js dev
+// import { TaskTreePanel } from '@/components/panels/task-tree-panel'
 import { ActivityFeedPanel } from '@/components/panels/activity-feed-panel'
 import { AgentSquadPanelPhase3 } from '@/components/panels/agent-squad-panel-phase3'
 import { AgentCommsPanel } from '@/components/panels/agent-comms-panel'
@@ -530,7 +531,7 @@ function ContentRouter({ tab }: { tab: string }) {
         </>
       )
     case 'tasks':
-      return <TaskTreePanel />
+      return <TaskBoardPanel />
     case 'agents':
       return (
         <>
