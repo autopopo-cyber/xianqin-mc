@@ -397,7 +397,8 @@ export default function Home() {
   // eslint-disable-next-line react-hooks/exhaustive-deps -- boot once on mount, not on every pathname change
   }, [connect, router, setCurrentUser, setDashboardMode, setGatewayAvailable, setLocalSessionsAvailable, setCapabilitiesChecked, setSubscription, setUpdateAvailable, setShowOnboarding, setAgents, setSessions, setProjects, setInterfaceMode, setMemoryGraphAgents, setSkillsData])
 
-  if (!isClient || !bootComplete) {
+  // 仙秦: skip boot screen entirely
+  if (false) {
     return <Loader variant="page" steps={isClient ? initSteps : undefined} />
   }
 
