@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo, useRef } from 'react'
 import { useTranslations } from 'next-intl'
 
 // ── Types ────────────────────────────────────────────────────
@@ -86,6 +86,7 @@ export function TaskTreePanel() {
   const [tasks, setTasks] = useState<Task[]>([])
   const [projects, setProjects] = useState<Project[]>([])
   const [collapsed, setCollapsed] = useState<Set<number>>(new Set())
+  const [, forceUpdate] = useState(0)
 
   useEffect(() => {
     async function load() {
@@ -98,6 +99,7 @@ export function TaskTreePanel() {
         const pData = pRes.ok ? await pRes.json() : {}
         setTasks(tData.tasks || [])
         setProjects(pData.projects || [])
+        forceUpdate(n => n + 1)
       } catch (e) { /* silently use empty state */ }
     }
     load()
