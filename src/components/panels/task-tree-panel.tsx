@@ -135,7 +135,7 @@ export function TaskTreePanel() {
         {displayProjects.map(project => {
           const projectTasks = projectGroups.get(project.id) || []
           const rootNodes = buildTree(projectTasks, null, 0)
-          if (rootNodes.length === 0) return null
+          if (rootNodes.length === 0 && project.id !== 0) return null
 
           const doneCount = projectTasks.filter(t => t.status === 'done' || t.status === 'completed').length
           const totalCount = projectTasks.length
