@@ -30,7 +30,7 @@
     "moreIssues": "+ {count} more issue{count, plural, one {} other {s}}"
   },
   "auth": {
-    "missionControl": "Mission Control",
+    "missionControl": "XianQin Command Center",
     "signInToContinue": "Sign in to continue",
     "username": "Username",
     "password": "Password",
@@ -43,15 +43,15 @@
     "loginFailed": "Login failed",
     "enterUsername": "Enter username",
     "enterPassword": "Enter password",
-    "orchestrationTagline": "OpenClaw Agent Orchestration",
+    "orchestrationTagline": "XianQin Empire · Fleet Command",
     "accessRequestSubmitted": "Access Request Submitted",
     "accessRequestDescription": "Your request has been sent to an administrator for review. You'll be able to sign in once approved.",
     "tryAgain": "Try again",
     "noAdminAccount": "No admin account created yet",
-    "noAdminDescription": "Set up your admin account to get started with Mission Control.",
+"noAdminDescription": "Create an admin account to start using XianQin Command Center."
     "createAdminAccount": "Create Admin Account",
-    "welcomeToMC": "Welcome to Mission Control",
-    "settingUpMC": "Setting up Mission Control",
+    "welcomeToMC": "Welcome to XianQin Command Center",
+    "settingUpMC": "Setting up XianQin Command Center",
     "createAdminToStart": "Create your admin account to get started",
     "creatingAdmin": "Creating your admin account...",
     "displayName": "Display Name",

@@ -52,8 +52,8 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Mission Control — AI Agent Orchestration Dashboard',
-  description: 'Open-source dashboard for AI agent orchestration. Manage agent fleets, dispatch tasks, track costs, and coordinate multi-agent workflows. Self-hosted, zero dependencies, SQLite-powered.',
+  title: '仙秦帝国 · 舰队指挥中心',
+  description: '仙秦帝国 AI Agent 舰队指挥中心。多智能体协同、实时监控、功勋爵位体系。基于 Hermes + Mission Control，SQLite 驱动，自主可控。',
   metadataBase,
   icons: {
     icon: [
