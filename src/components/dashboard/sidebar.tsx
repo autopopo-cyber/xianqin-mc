@@ -88,15 +88,15 @@ export function Sidebar() {
           <div className="w-8 h-8 rounded-lg overflow-hidden bg-background border border-border/50 flex items-center justify-center">
             <Image
               src="/brand/mc-logo-128.png"
-              alt="Mission Control logo"
+              alt="仙秦指挥中心"
               width={32}
               height={32}
               className="w-full h-full object-cover"
             />
           </div>
           <div>
-            <h2 className="font-bold text-foreground">Mission Control</h2>
-            <p className="text-xs text-muted-foreground">ClawdBot Orchestration</p>
+            <h2 className="font-bold text-foreground">仙秦指挥中心</h2>
+            <p className="text-xs text-muted-foreground">舰队指挥中心</p>
           </div>
         </div>
       </div>
