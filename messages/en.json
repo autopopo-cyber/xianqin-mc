@@ -48,7 +48,7 @@
     "accessRequestDescription": "Your request has been sent to an administrator for review. You'll be able to sign in once approved.",
     "tryAgain": "Try again",
     "noAdminAccount": "No admin account created yet",
-"noAdminDescription": "Create an admin account to start using XianQin Command Center."
+    "noAdminDescription": "Create an admin account to start using XianQin Command Center.",
     "createAdminAccount": "Create Admin Account",
     "welcomeToMC": "Welcome to XianQin Command Center",
     "settingUpMC": "Setting up XianQin Command Center",
