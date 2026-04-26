@@ -92,8 +92,8 @@ export function TaskTreePanel() {
     async function load() {
       try {
         const [tRes, pRes] = await Promise.all([
-          fetch('/api/tasks'),
-          fetch('/api/projects'),
+          fetch('/api/tasks', { credentials: 'include' }),
+          fetch('/api/projects', { credentials: 'include' }),
         ])
         const tData = tRes.ok ? await tRes.json() : {}
         const pData = pRes.ok ? await pRes.json() : {}
